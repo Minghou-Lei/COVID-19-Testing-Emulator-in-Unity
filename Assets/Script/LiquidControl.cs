@@ -5,6 +5,7 @@ using UnityEngine;
 public class LiquidControl : MonoBehaviour
 {
     public float fill;
+    public string name;
     private float value;
     public Color color;
     private Renderer liquid;

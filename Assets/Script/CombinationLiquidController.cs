@@ -22,6 +22,8 @@ public class CombinationLiquidController : MonoBehaviour
                     break;
             }
         }
+        vtube.fill = VtubeLiquid;
+        filter.fill = FilterLiquid;
     }
 
     // Update is called once per frame

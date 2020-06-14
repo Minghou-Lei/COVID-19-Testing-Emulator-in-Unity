@@ -3,33 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CombinationLiquidController : MonoBehaviour
-{
-    public float VtubeLiquid;
-    public float FilterLiquid;
-    private LiquidControl vtube;
-    private LiquidControl filter;
+{  
+    public LiquidControl vtube;
+    public LiquidControl filter;
     // Start is called before the first frame update
     void Start()
     {
-        LiquidControl[] liquidControls = GetComponentsInChildren<LiquidControl>();
-        foreach(LiquidControl l in liquidControls){
-            switch(l.name){
-                case "vtube":
-                    vtube = l;
-                    break;
-                case "filter":
-                    filter = l;
-                    break;
-            }
-        }
-        vtube.fill = VtubeLiquid;
-        filter.fill = FilterLiquid;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        vtube.fill = VtubeLiquid;
-        filter.fill = FilterLiquid;
+        
     }
+
+    public void setV(LiquidControl l) {
+        vtube.color = l.color;
+        vtube.fill = l.fill;
+        vtube.liquidName = l.liquidName;
+    }
+
+    public void setF(LiquidControl l) {
+        filter.color = l.color;
+        filter.fill = l.fill;
+        filter.liquidName = l.liquidName;
+    }
+
+
 }

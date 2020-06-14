@@ -406,9 +406,17 @@
     <Compile Include="Assets\Imported\VRTK\Source\Scripts\Utilities\VRTK_SharedMethods.cs" />
     <Compile Include="Assets\Imported\VRTK\Source\Scripts\Utilities\VRTK_Simulator.cs" />
     <Compile Include="Assets\Imported\VRTK\Source\Scripts\Utilities\VRTK_VelocityEstimator.cs" />
+    <Compile Include="Assets\Script\Assemble.cs" />
+    <Compile Include="Assets\Script\CentrifugeController.cs" />
     <Compile Include="Assets\Script\CombinationLiquidController.cs" />
+    <Compile Include="Assets\Script\Iliquid.cs" />
     <Compile Include="Assets\Script\LiquidControl.cs" />
+    <Compile Include="Assets\Script\MoveLiquid.cs" />
+    <Compile Include="Assets\Script\OscillatorController.cs" />
+    <Compile Include="Assets\Script\PCRController.cs" />
+    <Compile Include="Assets\Script\Pipette.cs" />
     <Compile Include="Assets\Script\SampleExtrace.cs" />
+    <Compile Include="Assets\Script\StorageLiquid.cs" />
     <Compile Include="Assets\Script\VideoPlayer.cs" />
     <None Include="Assets\Imported\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\Imported\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
@@ -670,6 +678,12 @@
     </Reference>
     <Reference Include="UnityEngine.XRModule">
       <HintPath>E:/UnityEditor/2019.3.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>E:/UnityEditor/2019.3.8f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>E:/UnityEditor/2019.3.8f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>E:/UnityEditor/2019.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

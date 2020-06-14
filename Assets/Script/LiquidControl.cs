@@ -5,14 +5,20 @@ using UnityEngine;
 public class LiquidControl : MonoBehaviour
 {
     public float fill;
-    public string name;
+    public string liquidName;
     private float value;
     public Color color;
     private Renderer liquid;
     // Start is called before the first frame update
     void Start()
     {
-        liquid = transform.GetChild(0).GetComponent<Renderer>();
+        Renderer[] renderers = GetComponentsInChildren<Renderer>();
+        foreach(Renderer r in renderers) {
+            if(r.material.name.Contains("Liquid")) {
+                liquid = r;
+            }
+        }
+        //liquid = transform.GetChild(0).GetComponent<Renderer>();
     }
 
     // Update is called once per frame

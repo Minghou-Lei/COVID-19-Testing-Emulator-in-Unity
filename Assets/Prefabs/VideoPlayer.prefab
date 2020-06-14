@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 534755190743873238}
   - component: {fileID: 534755190743873239}
   - component: {fileID: 534755190743873225}
+  - component: {fileID: 5074737232085091928}
   m_Layer: 0
   m_Name: VideoPlayer
   m_TagString: Untagged
@@ -114,3 +115,16 @@ VideoPlayer:
   m_Looping: 0
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
+--- !u!65 &5074737232085091928
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534755190743873226}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.999999, y: 2.2204455e-16, z: 9.999998}
+  m_Center: {x: 0, y: 0, z: 0}

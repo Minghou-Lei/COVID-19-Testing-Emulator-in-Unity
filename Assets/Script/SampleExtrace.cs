@@ -11,6 +11,9 @@ public class SampleExtrace : MonoBehaviour
     public GameObject tubePrefab;
     public float offset;
     public VRTK_InteractableObject linkedObject;
+    public float fill;
+    public Color color;
+    public string liquidName;
 
     protected virtual void OnEnable() {
 
@@ -34,8 +37,9 @@ public class SampleExtrace : MonoBehaviour
     protected virtual void InteractableObjectUsed(object sender, InteractableObjectEventArgs e)
     {
         GameObject tube = Instantiate(tubePrefab,new Vector3(transform.position.x,transform.position.y+offset,transform.position.z),Quaternion.Euler(0,0,0));
-        tube.GetComponent<LiquidControl>().fill = 0.5f;
-        tube.GetComponent<LiquidControl>().color = Color.blue;
+        tube.GetComponent<LiquidControl>().fill = fill;
+        tube.GetComponent<LiquidControl>().color = color;
+        tube.GetComponent<LiquidControl>().liquidName = liquidName;
     }
 
     void Start()
